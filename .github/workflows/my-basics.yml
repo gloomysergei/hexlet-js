@@ -1,0 +1,43 @@
+# This is a basic workflow to help you get started with Actions
+
+name: My-GitHubActions-Basics
+
+# Controls when the action will run. 
+on:
+  push:
+    branches:
+      -master
+
+jobs:
+  my_testing:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Print Hello Messige
+      run : echo "hello World from Testing job"
+     
+  my_deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Print Hello Messige
+      run : echo "hello World from Deploy job"
+    
+      
+      
+      
+      
+
+      # Runs a single command using the runners shell
+      
+      
+      
+      
+      - name: Run a one-line script
+        run: echo Hello, world!
+
+      # Runs a set of commands using the runners shell
+      - name: Run a multi-line script
+        run: |
+          echo Add other actions to build,
+          echo test, and deploy your project.
