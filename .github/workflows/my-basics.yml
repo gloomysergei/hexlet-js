@@ -22,4 +22,3 @@ jobs:
     steps:
     - name: Print Hello Messige
       run : echo "hello World from Deploy job"
-    
